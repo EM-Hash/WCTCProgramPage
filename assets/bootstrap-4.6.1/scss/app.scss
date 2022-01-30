@@ -1,0 +1,152 @@
+//Set font size
+$font-size-base: 1vw;
+
+//Set color palette
+$primary: #003e7a;
+$secondary: #FDB813;
+$tertiary: #3993DD;
+$success: #ABD146;
+$warning: #31B6BD;
+$info: #FFDE74;
+$shaded: #EBF2FA;
+$light: #FFFFFF;
+
+//Theme colors
+$theme-colors:(
+  "tertiary": $tertiary,
+  "shaded": $shaded
+);
+
+$navbar-light-color: $primary;
+$navbar-light-hover-color: $warning;
+$navbar-light-active-color: $warning;
+
+//Theme Font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@270&display=swap');
+$navbar-dark-color: $light;
+$font-family-base: 'Montserrat';
+
+#programCoursesButton, #programPathwayButton{
+  height: 15vw;
+  color: $light;
+  font-weight: bolder;
+  font-size: 100%;
+}
+
+.buttonImage{
+  height: 100%;
+  width: auto;
+}
+
+.link{
+  text-decoration: underline;
+  color: $tertiary;
+}
+
+.tabHeader{
+  font-size: 2.5vw;
+}
+
+//Import bootstrap scss
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/root";
+@import "bootstrap/reboot";
+@import "bootstrap/type";
+@import "bootstrap/images";
+@import "bootstrap/code";
+@import "bootstrap/grid";
+@import "bootstrap/tables";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
+@import "bootstrap/transitions";
+@import "bootstrap/dropdown";
+@import "bootstrap/button-group";
+@import "bootstrap/input-group";
+@import "bootstrap/custom-forms";
+@import "bootstrap/nav";
+@import "bootstrap/navbar";
+@import "bootstrap/card";
+@import "bootstrap/breadcrumb";
+//@import "bootstrap/pagination";
+@import "bootstrap/badge";
+@import "bootstrap/jumbotron";
+@import "bootstrap/alert";
+//@import "bootstrap/progress";
+@import "bootstrap/media";
+@import "bootstrap/list-group";
+@import "bootstrap/close";
+//@import "bootstrap/toasts";
+//@import "bootstrap/modal";
+@import "bootstrap/tooltip";
+//@import "bootstrap/popover";
+@import "bootstrap/carousel";
+@import "bootstrap/spinners";
+@import "bootstrap/utilities";
+@import "bootstrap/print";
+
+//dark navbar - font should be bold and small
+.navbar-dark{
+  font-size: $small-font-size;
+}
+
+ol.big-numbers{
+  //Remove the defaults
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  //Set spacing
+  display: grid;
+  gap: 20px;
+
+  //Create counter
+  counter-reset: list;
+
+  li{
+    //Set spacing
+    display: grid;
+    grid-template-columns: min-content 50vw;
+    column-gap: 20px;
+    //Increment counter
+    counter-increment: list;
+  }
+
+  li::before{
+    //Set content
+    content: counter(list);
+    //Set background
+    background-color: $primary;
+    //Set text
+    color: white;
+    font-weight: $font-weight-bolder;
+    font-size: $font-size-lg;
+    font-family: Roboto, serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    //Set box
+    $size: $navbar-brand-height;
+    height: $size;
+    width: $size;
+  }
+}
+
+.certificate{
+  background-color: darken($shaded, 10%);
+  border-left-color: $tertiary;
+  border-left-width: 3px;
+  border-left-style: solid;
+  padding: 3vw 1vw;
+}
+
+.bannerButton{
+  height: 5vw;
+  width: auto;
+}
+
+video{
+  height: 30vw;
+  width: auto;
+}

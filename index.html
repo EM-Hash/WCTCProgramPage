@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Baking and Pastry Management | Waukesha County Technical College</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="media/WCTCIcon.png">
+    <!-- Bootstrap style sheet -->
+    <link rel="stylesheet" href="assets/bootstrap-4.6.1/dist/css/bootstrap.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+<body class="text-primary">
+<!-- Topmost navbar - does not have logo -->
+<nav class="navbar navbar-expand-lg bg-primary navbar-dark justify-content-end" role="navigation">
+    <!-- Toggle button for when the nav collapses -->
+    <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse" data-target="#topNavbar"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Navbar content - collapses when screen gets small enough -->
+    <div class="collapse navbar-collapse justify-content-end" id="topNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">MyWCTC</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Alumni</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Foundation</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Technology</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- Next navbar - contains logo -->
+<nav class = "navbar navbar-expand-xl navbar-light justify-content-between" role = "navigation">
+    <!-- logo -->
+    <a class="navbar-brand"><img src="media/WCTCLogo.svg" width="250 em" height = "auto" alt="WCTC Logo"></a>
+    <!-- Toggle button for when the nav collapses -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#xlNavbar"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Navbar content - will collapse when screen gets smaller -->
+    <div class="collapse navbar-collapse justify-content-end" id="xlNavbar">
+        <!-- nav items - all dropdowns -->
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <!-- When you click on the nav, you go somewhere -->
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Academics</a>
+                <!-- Hovering will give a drop-down list -->
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Programs and Courses</a>
+                    <a class="dropdown-item" href="#">Take a Course</a>
+                    <a class="dropdown-item" href="#">Academic Calendar</a>
+                    <a class="dropdown-item" href="#">Career Connections</a>
+                    <a class="dropdown-item" href="#">Library</a>
+                    <a class="dropdown-item" href="#">Academic Resources</a>
+                    <a class="dropdown-item" href="#">Graduation</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <!-- When you click on the nav, you go somewhere -->
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Admission & Cost</a>
+                <!-- Hovering will give a drop-down list -->
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Tuition & Aid</a>
+                    <a class="dropdown-item" href="#">Steps to Apply</a>
+                    <a class="dropdown-item" href="#">Transfer Students</a>
+                    <a class="dropdown-item" href="#">International Students</a>
+                    <a class="dropdown-item" href="#">Veterans</a>
+                    <a class="dropdown-item" href="#">New Student Orientation</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <!-- When you click on the nav, you go somewhere -->
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Campus Life</a>
+                <!-- Hovering will give a drop-down list -->
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Events Calendar</a>
+                    <a class="dropdown-item" href="#">Wellness & Support</a>
+                    <a class="dropdown-item" href="#">Activities & Organizations</a>
+                    <a class="dropdown-item" href="#">Safety & Policies</a>
+                    <a class="dropdown-item" href="#">Dining</a>
+                    <a class="dropdown-item" href="#">Bookstore</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <!-- When you click on the nav, you go somewhere -->
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Business Services</a>
+                <!-- Hovering will give a drop-down list -->
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Corporate Training Center</a>
+                    <a class="dropdown-item" href="#">Small Business Center</a>
+                    <a class="dropdown-item" href="#">Community Involvement</a>
+                    <a class="dropdown-item" href="#">Hire WCTC Talent</a>
+                    <a class="dropdown-item" href="#">Facility Rentals</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <!-- When you click on the nav, you go somewhere -->
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Community</a>
+                <!-- Hovering will give a drop-down list -->
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Take a Course</a>
+                    <a class="dropdown-item" href="#">Learning in Retirement</a>
+                    <a class="dropdown-item" href="#">Child Development Center</a>
+                    <a class="dropdown-item" href="#">Student-Provided Services</a>
+                    <a class="dropdown-item" href="#">English as a Second Language</a>
+                    <a class="dropdown-item" href="#">U.S. Citizenship</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <!-- When you click on the nav, you go somewhere -->
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About</a>
+                <!-- Hovering will give a drop-down list -->
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">WCTC Facts</a>
+                    <a class="dropdown-item" href="#">Visit WCTC</a>
+                    <a class="dropdown-item" href="#">Leadership</a>
+                    <a class="dropdown-item" href="#">Institutional Effectiveness</a>
+                    <a class="dropdown-item" href="#">Campus & Academic Policies</a>
+                    <a class="dropdown-item" href="#">Forms</a>
+                    <a class="dropdown-item" href="#">Publications</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- Program name + Video -->
+<div class="container-fluid mx-0"
+     style="background-image: url('media/BakingBackground.jpg'); background-repeat: no-repeat; background-size: cover">
+    <div class="row">
+        <div class="col-md-6 col-12 align-self-center">
+            <video autoplay muted src="media/ProgramVideo.mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="col-md-6 col-12 align-self-center text-white font-weight-bolder">
+            <h1>Baking and Pastry Production</h1>
+        </div>
+    </div>
+</div>
+<!-- breadcrumbs leading to current page -->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Academics</a></li>
+        <li class="breadcrumb-item"><a href="#">Programs and Courses</a></li>
+        <li class="breadcrumb-item"><a href="#">Program List</a></li>
+        <li class="breadcrumb-item active">Baking and Pastry Production</li>
+    </ol>
+</nav>
+<!-- program info / overview -->
+<div class="container-fluid row justify-content-around my-5 pl-0">
+    <div class="col-5 justify-content-between">
+        <div class="col">
+            <div class="row">
+                <div class="col-12 nav-tabs nav-fill flex-shrink-0 pl-0">
+                    <h4 class="nav-link active tabHeader">Program Information</h4>
+                </div>
+                <div class="col-6">
+                    <!-- 4 rows - or 4 columns, each 1 row wide -->
+                    <div>
+                        <h5>Degree Type</h5>
+                        27-Credit Technical Diploma
+                    </div>
+                    <div>
+                        <h5>Program Code</h5>
+                        31-314-3
+                    </div>
+                    <div>
+                        <h5>Time to Degree</h5>
+                        1 Year
+                    </div>
+                    <div>
+                        <h5>Start Date</h5>
+                        August
+                    </div>
+                </div>
+                <div class="col-6">
+                    <!-- 2 rows or 2 columns each 1 row wide -->
+                    <h5>How You'll Learn</h5>
+                    <div>Hybrid</div>
+                    <hr>
+                    <div>Daytime</div>
+                    <div>Evening</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-5">
+        <!-- Tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active navTab" href="#programOverviewTab" data-toggle="tab" role="tab">Program Overview</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navTab" href="#applicationDeadlineTab" data-toggle="tab" role="tab">Application Deadlines</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navTab" href="#programCostTab" data-toggle="tab" role="tab">Program Cost</a>
+            </li>
+        </ul>
+        <!-- Tab Data -->
+        <div class="tab-content pt-3">
+            <div class="tab-pane fade show active" id="programOverviewTab" role="tabpanel">
+                Professional bakers possess the skills and creativity necessary to prepare everything from artisan
+                breads to decadent desserts. Focus on baking concepts, principles and techniques, and devote more than
+                500 hours to lab course time gaining hands-on practice. Learn to prepare specialty breads, desserts and
+                pastries, and refine techniques in cake production and decorating.
+            </div>
+            <div class="tab-pane fade" id="applicationDeadlineTab" role="tabpanel">
+                <h5>Deadlines to Know*</h5>
+                <h6>Fall 2022 Start</h6>
+                <ul>
+                    <li>Submit application by June 13 2022</li>
+                    <li>Complete checklist items by August 8, 2022</li>
+                </ul>
+                <h6>Spring 2022 Start</h6>
+                <ul>
+                    <li>Complete checklist items by August 8, 2022</li>
+                </ul>
+                <h6>Summer 2022 Start</h6>
+                <ul>
+                    <li>This program cannot be started in summer.</li>
+                </ul>
+                <small><em>* Application deadlines are subject to change based on program demand.</em></small>
+            </div>
+            <div class="tab-pane fade" id="programCostTab" role="tabpanel">
+                <h6>Tuition Cost</h6>
+                <span>The cost of your degree depends on a number of factors, including where you live, how your
+                    program is delivered, how long it takes to finish your program and the financial aid you receive.
+                    Explore current <a class="link" href="#">tuition and fees</a>.</span>
+                <h6>Additional Estimated Costs</h6>
+                <ul>
+                    <li>Any PC</li>
+                    <li>Baking Kit: $450</li>
+                    <li>Uniforms: $200</li>
+                    <li>Black non-slip lace-up shoes: $50</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Application section -->
+<div class="container-fluid bg-shaded px-5">
+    <div class="row">
+        <div class="col-8">
+            <h2>How to Apply</h2>
+            <ul>
+                <li><a class="link" href="">Apply Online</a> and pay the $30 application fee.</li>
+                <li>the $30 application fee.</li>
+                <li>Complete <a class="link" href="">placement assessment</a> (Reading and Writing).</li>
+            </ul>
+            <small><strong>Questions on the application process?</strong> Visit the <a class="link" href="">Admissions</a> page or contact an <a>Admissions Advisor</a>.</small>
+
+        </div>
+        <div class="col-4 align-self-center">
+            <button class="btn btn-secondary">Apply Online</button>
+        </div>
+    </div>
+</div>
+<!-- Program details section -->
+<div class="container-fluid px-5 my-5">
+    <h2>Program Details</h2>
+    <div class="row">
+        <div class="col-6">
+            <button class="btn btn-outline-primary collapse-button btn-block" type="button" data-toggle="collapse" data-target="#contactSection"
+                    role="button" aria-expanded="false">Contact Us</button>
+            <p class="card card-body collapse" id="contactSection"><strong>Questions?</strong> We'd love to help! Connect with our Outreach team by filling out our
+                <a class="link" href="">online form</a> or by email at <a class="link" href="">outreach@wctc.edu</a>.
+            </p>
+        </div>
+        <div class="col-6">
+            <button class="btn btn-outline-primary collapse-button btn-block" type="button" data-toggle="collapse"
+                data-target="#careerSalariesSection" role="button" aria-expanded="false">Career Salaries</button>
+            <p class="card card-body collapse" id="careerSalariesSection">
+                $22,100 - $32,200 annually<br>
+                <em>
+                    Salary range estimates based on wages for related occupations in Waukesha County as reported by
+                    Economic Modeling Specialists International (EMSI). Individual wages may vary based on experience,
+                    industry, location and specific job requirements.
+                </em><br>
+                Check the WCTC <a class="link" href="">Graduate Success Report</a> to view our graduates’ entry wages.
+            </p>
+        </div>
+        <div class="col-6">
+            <button class="btn btn-outline-primary collapse-button btn-block" type="button" data-toggle="collapse"
+                    data-target="#careersSection" role="button" aria-expanded="false">Potential Careers</button>
+            <div class="card card-body collapse" id="careersSection">
+                If you are creative, patient and have a great deal of stamina, a career in baking and pastry production
+                may be right for you. Bakers create new recipes and elaborate decorations for cakes and pastries, and
+                the work they do requires a steady hand and many hours of standing. Additionally, much of their work is
+                detail oriented, requiring a sharp focus and eye for detail.<br>
+                <ul>
+                    <li>Pastry Chef</li>
+                    <li>Baker</li>
+                    <li>Cake Decorator</li>
+                    <li>Shift Supervisor</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-6">
+            <button class="btn btn-outline-primary collapse-button btn-block" type="button" data-toggle="collapse"
+                    data-target="#finAidSection" role="button" aria-expanded="false">Financial Aid</button>
+            <div class="card card-body collapse" id="finAidSection">
+                As a program student, you are eligible to receive:<br>
+                <ul>
+                    <li>Financial aid loans</li>
+                    <li>Scholarships</li>
+                    <li>Other forms of assistance</li>
+                </ul>
+                Learn more about <a class="link" href="">financial aid</a>.
+            </div>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-outline-primary collapse-button btn-block" type="button" data-toggle="collapse"
+            data-target="#eligibilitySection" role="button" aria-expanded="false">High School Eligibility</button>
+            <p class="card card-body collapse" id="eligibilitySection">
+                This program is open to qualified high school applicants. <a class="link" href=""><strong>Learn more ></strong></a>
+            </p>
+        </div>
+        <div class="col-12">
+            <div class="row my-5 justify-content-around">
+                <button class="col-5 btn align-self-start" id="programCoursesButton" style="background-image: url('media/Students.jpg');">
+                    <i class="bi bi-mortarboard"></i><br>
+                    Program Courses
+                </button>
+                <button class="col-5 btn align-self-center" id="programPathwayButton" style="background-image: url('media/Studying.jpg')">
+                    <i class="bi bi-file-earmark-text"></i><br>
+                    Program and Pathway PDF
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- What makes the program unique -->
+<div class="container-fluid p-5 bg-shaded">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h3>What Makes This Program Unique?</h3>
+            <ol class="big-numbers">
+                <li>This program is primarily offered during the evening, four days per week.</li>
+                <li>Classes give students extensive hands-on experience (576 lab hours) on a wide array of equipment.</li>
+                <li>
+                    <p>
+                    Hospitality and Culinary students gain valuable experience at WCTC's training restaurant, <a
+                            class="link" href="">The Classic Room and The Classic Bistro</a>.
+                    </p>
+                </li>
+            </ol>
+        </div>
+        <div class="col-md-4 offset-md-2 col-12">
+            <img class="img-fluid" src="media/LadyBaking.jpg" alt="Lady Baking">
+        </div>
+    </div>
+
+</div>
+<!-- Similar programs -->
+<div class="container-fluid px-5 my-5">
+    <h3>Similar Programs</h3>
+    <div class="row">
+        <div class="col-6">
+            <div class="card">
+                <img class="card-img-top" src="media/LadyBaking2.jpg" alt="Lady Baking 2">
+                <div class="card-body">
+                    <h4>Baking and Pastry Management</h4>
+                    <p class="card-text">Bakers prepare items such as breads, pastries, muffins and other items for general sale or
+                        specialty orders.</p>
+                    <button class="btn btn-primary">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card">
+                <img class="card-img-top" src="media/ManCooking.jpg" alt="Man Cooking">
+                <div class="card-body">
+                    <h4>Food Service Production</h4>
+                    <p>It takes a well-trained kitchen staff to create a memorable dining experience for restaurant patrons,
+                        and those in food service production are an integral part of that team.</p>
+                    <button class="btn btn-primary">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Related certificates -->
+<div class="container-fluid p-5 bg-shaded">
+    <h3>Related Certificates</h3>
+    <div class="row">
+        <div class="col-5 certificate align-self-start mr-5">
+            <a href="">
+                <h4>Baking/Pastry</h4>
+                <p>It takes a well-trained kitchen staff to create a memorable dining experience for restaurant patrons,
+                    and those in food service production are an integral part of that team.</p>
+            </a>
+        </div>
+        <div class="col-5 certificate align-self-center">
+            <a href="">
+                <h4>Culinary Skills</h4>
+                Gain fundamental skills for work in the food service industry in this short-term certificate program.
+            </a>
+        </div>
+    </div>
+</div>
+<!-- More Credit Opportunities -->
+<div class="container-fluid px-5 my-5">
+    <h3>More Credit Opportunities</h3>
+    <div class="row">
+        <div class="card col-6 px-0">
+            <h4 class="card-header">High School Dual Credit</h4>
+            <p class="card-body">Dual enrollment offers high school students an opportunity to get a head start in high-demand fields
+                while earning college credits.</p>
+            <button class="card-footer btn bg-primary text-light">Learn More</button>
+        </div>
+        <div class="card col-6 px-0">
+            <h4 class="card-header">Credit for Prior Learning</h4>
+            <p class="card-body">You may have the opportunity to obtain credit for the college-level skills and knowledge you've already
+                acquired through prior coursework, work experience and more.</p>
+            <button class="card-footer btn bg-primary text-light">Learn More</button>
+        </div>
+    </div>
+</div>
+<!-- Bottom Banner -->
+<div class="container-fluid px-5 py-3 bg-shaded">
+    <div class="row">
+        <div class="col-4">
+            <img>
+            <p>
+                <a class="link" href="">262.691.5566</a>
+                Wisconsin Relay System: 711
+            </p>
+            <p><a class="link" href="">800 Main Street, Pewaukee, WI 53072</a></p>
+        </div>
+        <div class="col-4">
+            <button class="btn btn-outline-primary">Contact Us</button><br>
+            <button class="btn btn-outline-primary">Staff Directory</button><br>
+            <button class="btn btn-outline-primary">WCTC Jobs</button><br>
+            <button class="btn btn-outline-primary">District Board</button>
+        </div>
+        <div class="col-4">
+           <button class="btn btn-outline-primary" aria-label="WCTC Facebook"><i class="bi bi-facebook"></i></button>
+            <button class="btn btn-outline-primary" aria-label="WCTC Twitter"><i class="bi bi-twitter"></i></button>
+            <button class="btn btn-outline-primary" aria-label="WCTC YouTube"><i class="bi bi-youtube"></i></button>
+            <button class="btn btn-outline-primary" aria-label="WCTC LinkedIn"><i class="bi bi-linkedin"></i></button>
+            <button  class="btn btn-outline-primary" aria-label="WCTC Instagram"><i class="bi bi-instagram"></i></button>
+            <br><br>
+            <div class="row">
+                <div class="col-6 mx-0 pr-1">
+                    <button class="btn btn-primary bannerButton" aria-label="WTC System"><img class="img-fluid" src="media/WTCIcon.png" alt="WTC System Icon"></button>
+                </div>
+                <div class="col-6 mx-0 px-1">
+                    <button class="btn btn-primary bannerButton" aria-label="Higher Learning Commission"><img
+                            class="buttonImage" src="media/HLCIcon.png" alt="Higher Learning Commission Icon"></button>
+                </div>
+            </div>
+            <br><br>
+        </div>
+    </div>
+</div>
+<!-- JQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<!-- Bootstrap -->
+<script src="assets/bootstrap-4.6.1/dist/js/bootstrap.bundle.js"></script>
+<!-- Custom JS -->
+<script src="assets/js/code.js"></script>
+</body>
+<!-- Footer -->
+<footer class="bg-primary text-light px-5">
+    <span>© 2019 Waukesha County Technical College</span>
+    <span><a class="link" href="">Legal</a>  <a class="link" href="">Sitemap</a></span>
+</footer>
+</html> 
