@@ -26,26 +26,7 @@ $navbar-light-active-color: $warning;
 $navbar-dark-color: $light;
 $font-family-base: 'Montserrat';
 
-#programCoursesButton, #programPathwayButton{
-  height: 15vw;
-  color: $light;
-  font-weight: bolder;
-  font-size: 100%;
-}
 
-.buttonImage{
-  height: 100%;
-  width: auto;
-}
-
-.link{
-  text-decoration: underline;
-  color: $tertiary;
-}
-
-.tabHeader{
-  font-size: 2.5vw;
-}
 
 //Import bootstrap scss
 @import "bootstrap/functions";
@@ -85,6 +66,8 @@ $font-family-base: 'Montserrat';
 @import "bootstrap/spinners";
 @import "bootstrap/utilities";
 @import "bootstrap/print";
+
+//Overrides
 
 //dark navbar - font should be bold and small
 .navbar-dark{
@@ -149,4 +132,25 @@ ol.big-numbers{
 video{
   height: 30vw;
   width: auto;
+}
+
+#programCoursesButton, #programPathwayButton{
+  height: 15vw;
+  color: $light;
+  font-weight: bolder;
+  font-size: 100%;
+}
+
+.buttonImage{
+  height: 100%;
+  width: auto;
+}
+
+.link{
+  text-decoration: underline;
+  color: $tertiary;
+}
+
+.tabHeader{
+  font-size: 2.5vw;
 }

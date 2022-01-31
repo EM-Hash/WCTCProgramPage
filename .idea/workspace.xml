@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7048a00-e706-4a22-a9cb-2378f97b620d" name="Default Changelist" comment="" />
+    <list default="true" id="b7048a00-e706-4a22-a9cb-2378f97b620d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/bootstrap-4.6.1/scss/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/bootstrap-4.6.1/scss/app.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +20,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="24FSSzzyZUj8pJHnP5jIcPUsWiZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,6 +36,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/bootstrap-4.6.1/scss" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -54,11 +62,24 @@
       <workItem from="1643224846333" duration="661000" />
       <workItem from="1643296863897" duration="6306000" />
       <workItem from="1643382761723" duration="13259000" />
-      <workItem from="1643470643219" duration="23895000" />
+      <workItem from="1643470643219" duration="24922000" />
+      <workItem from="1643654950878" duration="904000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <created>1643569977545</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1643569977545</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
   </component>
 </project>
